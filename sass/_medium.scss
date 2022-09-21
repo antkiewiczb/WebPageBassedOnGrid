@@ -1,22 +1,24 @@
 @media (min-width: 768px) {
-	&__box {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	&__card {
-		&--one {
-			grid-row: 1/2;
-			grid-column: 1/2;
+	.cards {
+		&__box {
+			padding: 10em 2em;
 		}
 
-		&--two {
-			grid-row: 1/2;
-			grid-column: 2/3;
-		}
+		&__card {
+			&--one {
+				grid-row: 1/2;
+				grid-column: 1/4;
+			}
 
-		&--three {
-			grid-row: 1/2;
-			grid-column: 3/4;
+			&--two {
+				grid-row: 1/2;
+				grid-column: 4/7;
+			}
+
+			&--three {
+				grid-row: 1/2;
+				grid-column: 7/10;
+			}
 		}
 	}
 }
